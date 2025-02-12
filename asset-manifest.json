@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BizVersion-react/static/css/main.0ce6a24b.css",
-    "main.js": "/BizVersion-react/static/js/main.ac2563da.js",
+    "main.js": "/BizVersion-react/static/js/main.c579e0bb.js",
     "static/media/bootstrap-icons.woff?": "/BizVersion-react/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
     "static/media/Nunito-Italic.ttf": "/BizVersion-react/static/media/Nunito-Italic.cedc8a593d8ba361dcf4.ttf",
     "static/media/Nunito-Regular.ttf": "/BizVersion-react/static/media/Nunito-Regular.9d7a6e03c6e3ed49c7ac.ttf",
@@ -21,10 +21,10 @@
     "index.html": "/BizVersion-react/index.html",
     "static/media/blob.svg": "/BizVersion-react/static/media/blob.ed6a0fdf0bce5f819a825e59a2b3ab07.svg",
     "main.0ce6a24b.css.map": "/BizVersion-react/static/css/main.0ce6a24b.css.map",
-    "main.ac2563da.js.map": "/BizVersion-react/static/js/main.ac2563da.js.map"
+    "main.c579e0bb.js.map": "/BizVersion-react/static/js/main.c579e0bb.js.map"
   },
   "entrypoints": [
     "static/css/main.0ce6a24b.css",
-    "static/js/main.ac2563da.js"
+    "static/js/main.c579e0bb.js"
   ]
 }
