@@ -1,0 +1,116 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Align content to the top */
+    min-height: 100%; /* Ensures the home container takes up the full height of the page */
+}
+
+.home .n {
+    background-color: #2c3e50; /* Dark blue */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .n ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: left;
+}
+
+.home .n li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.home .n ul li img {
+    width: 40px;
+    height: auto;
+}
+
+.home .n ul li h1 {
+    font-family: 'Arial', sans-serif;
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-left: 15px; /* Little distance from the logo */
+}
+
+.home .n ul li a {
+    font-family: 'Arial', sans-serif;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home .n ul li a:hover {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+}
+
+.home .n ul li:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: all 0.3s ease;
+}
+
+/* For Login and Register on the right corner */
+.home .n .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px; /* Reduced gap to make the links closer */
+}
+
+.home .n .right ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.home .n .right ul li {
+    margin: 0; /* Remove margin between list items */
+}
+
+.home .f {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    margin-top: auto; /* This ensures the footer pushes to the bottom */
+}
+
+.home .f p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.home .f .footer-links {
+    margin-top: 10px;
+}
+
+.home .f .footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.home .f .footer-links a:hover {
+    color: #3498db; /* Blue color on hover */
+}

@@ -1,0 +1,330 @@
+.table-container-dep {  
+  width: 380px;  
+  height: auto;  
+  overflow-y: auto;  
+  border: 1px solid #ccc;  
+  border-radius: 8px;  
+  padding: 10px;  
+  background: #f9f9f9;  
+  margin: 0px 0px 0px 100px;
+}  
+
+.table-container-dep {  
+
+table {  
+  width: 100%;  
+  border-collapse: collapse;  
+}  
+
+.one
+{
+  width:100px;
+}
+
+.two{
+  width:220px;
+}
+
+th, td {  
+  border: 1px solid #ddd;  
+  padding: 8px;  
+  text-align: center;  
+}  
+
+th {  
+  background: #007bff;  
+  color: white;  
+}  
+
+input {  
+  width: 90%;  
+  padding: 5px;  
+  border: 1px solid #ccc;  
+  border-radius: 4px;  
+  margin:0;
+}  
+
+.add-btn, .delete-btn {  
+  padding: 5px 10px;  
+  border: none;  
+  cursor: pointer;  
+  border-radius: 4px;  
+}  
+
+.add-btn {  
+  background: #28a745;  
+  color: white;  
+}  
+
+.delete-btn {  
+  background: #dc3545;  
+  color: white;  
+}  
+
+.add-btn:hover {  
+  background: #218838;  
+}  
+
+.delete-btn:hover {  
+  background: #c82333;  
+}  
+
+}
+
+.Employee-Add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;  /* Increased width */
+  max-height: 90vh;  /* Prevent form from exceeding screen */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px; /* Prevents form from touching the screen edges */
+}
+
+.Employee-Add
+{
+
+  .grid-card {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Soft gradient background */
+    border-radius: 15px 30px 30px 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow for 3D effect */
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 85vh;
+    overflow-y: auto;
+    border: 2px solid #e0e0e0; /* Light border for structure */
+}
+
+/* Title Styling */
+.form-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Grid Item Styling */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.grid-item label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Input Fields */
+.grid-item input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+/* Input Focus Effect */
+.grid-item input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Full Width Element */
+.full-width {
+    grid-column: span 2;
+    text-align: center;
+}
+
+/* Primary Button */
+button {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(90deg, #0056b3, #003c80);
+}
+
+/* Close Button */
+.close-btn {
+    margin-top: 15px;
+    background: linear-gradient(90deg, #ff4d4d, #d60000);
+    font-weight: bold;
+}
+
+/* Close Button Hover Effect */
+.close-btn:hover {
+    background: linear-gradient(90deg, #d60000, #a00000);
+}
+
+
+}
+
+
+.Task-Add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  max-width: 100%;  /* Increased width */
+  max-height: 90vh;  /* Prevent form from exceeding screen */
+}
+
+.overlay-task {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px; /* Prevents form from touching the screen edges */
+}
+
+.Task-Add
+{
+
+  .grid-card {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Soft gradient background */
+    border-radius: 15px 30px 30px 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow for 3D effect */
+    padding: 30px;
+    width: 100% !important;
+    max-width: 1000px !important;
+    max-height: 85vh;
+    overflow-y: auto;
+    border: 2px solid #e0e0e0; /* Light border for structure */
+}
+
+/* Title Styling */
+.form-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Grid Item Styling */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.grid-item label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Input Fields */
+.grid-item input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+/* Input Focus Effect */
+.grid-item input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Full Width Element */
+.full-width {
+    grid-column: span 2;
+    text-align: center;
+}
+
+/* Primary Button */
+button {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:disabled {
+  background: linear-gradient(90deg, #cccccc, #999999); /* Gray out effect */
+  color: #666666; /* Dim text */
+  cursor: not-allowed; /* Show 'not-allowed' cursor */
+  opacity: 0.6; /* Reduce opacity */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(90deg, #0056b3, #003c80);
+}
+
+/* Close Button */
+.close-btn {
+    margin-top: 15px;
+    background: linear-gradient(90deg, #ff4d4d, #d60000);
+    font-weight: bold;
+}
+
+/* Close Button Hover Effect */
+.close-btn:hover {
+    background: linear-gradient(90deg, #d60000, #a00000);
+}
+
+
+}

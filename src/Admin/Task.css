@@ -1,0 +1,98 @@
+/* Full-screen overlay */
+.task-dis-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal content */
+.task-dis-overlay-content {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styling */
+.task-dis-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.task-dis-form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-dis-overlay 
+{
+
+input, textarea {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+}
+
+/* Table styling */
+.task-dis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.task-dis-table th, .task-dis-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Buttons */
+.task-dis-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.task-dis-submit-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.task-dis-close-btn {
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.close-btn-dis {
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

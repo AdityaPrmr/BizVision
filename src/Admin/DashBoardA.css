@@ -1,0 +1,36 @@
+.aa {
+  .grid-card {
+    background: #fff;
+    border-radius: 15px; /* Rounded corners for the whole card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Realistic shadow */
+    padding: 20px;
+    max-width: 500px; /* Adjust as needed */
+    margin: auto; /* Center the card */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    gap: 15px; /* Increased spacing between grid items */
+    padding: 20px; /* Increased padding inside grid */
+    
+    /* FIX: Prevent row height expansion */
+    align-items: start;
+
+    /* FIX: Fill empty spaces by allowing reordering */
+    grid-auto-flow: dense;
+  }
+
+  .grid-item {
+    background-color: #f8f9fa;
+    border-radius: 8px; /* Slightly rounded corners for items */
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+
+
+
+

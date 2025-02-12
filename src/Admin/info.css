@@ -1,0 +1,39 @@
+.infoUser {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 1000px !important; /* Full width minus left margin */
+  margin-top: 30px;
+  margin-left: 150px !important;
+  margin-right: 20px !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1) !important;
+  background: linear-gradient(135deg, #f3f4f6, #ffffff) !important;
+  border: 1px solid #ddd !important;
+}
+
+
+  
+  .infoUser h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+  }
+  
+  .infoUser p {
+    color: #4b5563;
+    margin: 4px 0;
+  }
+  
+  .infoUser .manager-badge {
+    background-color: #10b981;
+    color: white;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+    

@@ -1,0 +1,94 @@
+/* Basic Page Styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 95%; /* Further increased container width */
+    max-width: 1400px; /* Increased max-width for more space */
+}
+
+/* Form Box */
+.form-box {
+    background: white;
+    padding: 20px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Increased form width */
+    text-align: center;
+}
+
+/* Form Header */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.r 
+{
+    color: red;
+    display: inline-block;
+    font-size: large;
+    margin: 0;
+}
+
+/* Input Fields */
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+input, select {
+    width: 80%; /* Restricted textbox width */
+    padding: 12px;  /* Increased vertical padding */
+    margin-bottom: 35px;  /* Increased vertical spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0px; /* Further increased vertical space */
+    column-gap: 20px; /* Increased horizontal spacing */
+}
+
+/* Grid Items */
+.grid div {
+    width: 100%;
+    margin-bottom: 20px; /* Increased spacing */
+}
+
+/* Buttons */
+.btn {
+    width: 80%; /* Restricted button width for alignment */
+    padding: 16px; /* Increased padding */
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 25px; /* Increased spacing */
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}

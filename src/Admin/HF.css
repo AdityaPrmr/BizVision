@@ -1,0 +1,117 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.aa {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Align content to the top */
+    min-height: 100%; /* Ensures the home container takes up the full height of the page */
+}
+
+.aa nav {
+    background-color: #2c3e50; /* Dark blue */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aa nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: left;
+}
+
+.aa nav li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.aa nav ul li img {
+    width: 40px;
+    height: auto;
+}
+
+.aa nav ul li h1 {
+    font-family: 'Arial', sans-serif;
+    color: #ecf0f1;
+    font-size: 24px;
+    margin-left: 15px; /* Little distance from the logo */
+}
+
+.aa nav ul li a {
+    font-family: 'Arial', sans-serif;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.aa nav ul li a:hover {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+}
+
+.aa nav ul li:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: all 0.3s ease;
+}
+
+/* For Login and Register on the right corner */
+.aa nav .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px; /* Reduced gap to make the links closer */
+}
+
+.aa nav .right ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.aa nav .right ul li {
+    margin: 0; /* Remove margin between list items */
+    cursor: pointer;
+}
+
+.aa footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    margin-top: auto; /* This ensures the footer pushes to the bottom */
+}
+
+.aa footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.aa .footer-links {
+    margin-top: 10px;
+}
+
+.aa .footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.aa .footer-links a:hover {
+    color: #3498db; /* Blue color on hover */
+}
