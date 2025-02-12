@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/BizVersion-react/static/css/main.0ce6a24b.css",
+    "main.js": "/BizVersion-react/static/js/main.e7bc9717.js",
+    "static/media/bootstrap-icons.woff?": "/BizVersion-react/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/Nunito-Italic.ttf": "/BizVersion-react/static/media/Nunito-Italic.cedc8a593d8ba361dcf4.ttf",
+    "static/media/Nunito-Regular.ttf": "/BizVersion-react/static/media/Nunito-Regular.9d7a6e03c6e3ed49c7ac.ttf",
+    "static/media/Nunito-Bold.ttf": "/BizVersion-react/static/media/Nunito-Bold.275dd55e10ba966bcb9b.ttf",
+    "static/media/hero2.webp": "/BizVersion-react/static/media/hero2.e799d92cb1e3d89e5855.webp",
+    "static/media/bootstrap-icons.woff2?": "/BizVersion-react/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "static/media/hero3.webp": "/BizVersion-react/static/media/hero3.53868cb7c269599121a4.webp",
+    "static/media/hero1.webp": "/BizVersion-react/static/media/hero1.3268045af834a626f27e.webp",
+    "static/media/overlay.webp": "/BizVersion-react/static/media/overlay.129db9feaa50cd1efebd.webp",
+    "static/media/Damion.ttf": "/BizVersion-react/static/media/Damion.6c9c6a7619727c26a473.ttf",
+    "static/media/logo.png": "/BizVersion-react/static/media/logo.2a127c1242cf3af71fa4.png",
+    "static/media/team.webp": "/BizVersion-react/static/media/team.1979e5f87ec1269e3f9c.webp",
+    "static/media/work1.webp": "/BizVersion-react/static/media/work1.824f410d2ca8803fdacc.webp",
+    "static/media/work3.webp": "/BizVersion-react/static/media/work3.bd041c900b650bb9c7a2.webp",
+    "static/media/work2.webp": "/BizVersion-react/static/media/work2.085d0b33e487b96b1238.webp",
+    "static/media/wave.svg": "/BizVersion-react/static/media/wave.e29c6b2d3cfb9f7a2b2d.svg",
+    "index.html": "/BizVersion-react/index.html",
+    "static/media/blob.svg": "/BizVersion-react/static/media/blob.ed6a0fdf0bce5f819a825e59a2b3ab07.svg",
+    "main.0ce6a24b.css.map": "/BizVersion-react/static/css/main.0ce6a24b.css.map",
+    "main.e7bc9717.js.map": "/BizVersion-react/static/js/main.e7bc9717.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ce6a24b.css",
+    "static/js/main.e7bc9717.js"
+  ]
+}
