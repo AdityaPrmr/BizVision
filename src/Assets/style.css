@@ -1,6 +1,7 @@
-/* 
+/* /* 
     Handcoded by JAC - Johnny Alimoot C.
-*/
+
+
 :root{
     --h1TextSize: 2.66em;
     --h2TextSize: 1.90em;
@@ -47,6 +48,7 @@
     color: var(--selectionText);
 }
 
+
 html,
 body{
     margin: 0;
@@ -57,6 +59,8 @@ body{
     scroll-padding-top: -moz-calc(var(--navHeight) + 30);
     scroll-padding-top: calc(var(--navHeight) + 30);
 }
+
+
 
 img{
     width: 100%; height: 100%;
@@ -720,7 +724,7 @@ footer > .copy{
             box-shadow: 0 2px 10px -5px var(--shadowColor);
 }
 
-/* Buttons and links */
+
 .tab-mob-menu{
     display: none;
 }
@@ -826,7 +830,7 @@ button{
     color: var(--textBlack);
 }
 
-/* Hovers */
+
 a:hover,
 a:focus{
     color: #dadde9;
@@ -868,7 +872,7 @@ a.fc-white{
          -o-transform: translateY(-3px);
             transform: translateY(-3px);
 }
-/* Active */
+
 .btn-bg1:active{
     -webkit-filter: contrast(75%) brightness(150%);
             filter: contrast(75%) brightness(150%);
@@ -893,7 +897,7 @@ a.fc-white{
 }
 
 
-/* Tablet View */
+
 @media only screen and (max-width: 992px) {
 
     .hero-title{
@@ -985,7 +989,7 @@ a.fc-white{
     }
 }
 
-/* Mobile View */
+
 @media only screen and (max-width: 600px){
     .sticky-img-dual{
         width: 100%;
@@ -1042,3 +1046,5 @@ a.fc-white{
         height: auto;
     }
 }
+
+*/
