@@ -702,60 +702,58 @@ const Task = ({info})=>{
     return (<>
         <h1>MANAGE TASK</h1>
         {infoDis[0] == true ? (<>
-            <div style={stylesTaskDisOverlay.overlay} className="task-dis-overlay">
-    <div style={stylesTaskDisOverlay.content} className="task-dis-overlay-content">
+            <div style={stylesTaskDisOverlay.overlay}>
+    <div style={stylesTaskDisOverlay.content}>
         <h2>Task Details</h2>
         <form>
-            <div style={stylesTaskDisOverlay.formGroup} className="task-dis-form-group">
+            <div style={stylesTaskDisOverlay.formGroup}>
                 <label style={stylesTaskDisOverlay.label}>ID:</label>
-                <input style={stylesTaskDisOverlay.input} type="text" value={infoDis[2].id} readOnly />
+                <input style={stylesTaskDisOverlay.input} type="text" readOnly />
             </div>
 
-            <div style={stylesTaskDisOverlay.formGroup} className="task-dis-form-group">
+            <div style={stylesTaskDisOverlay.formGroup}>
                 <label style={stylesTaskDisOverlay.label}>Name:</label>
-                <input style={stylesTaskDisOverlay.input} type="text" value={infoDis[2].name} readOnly />
+                <input style={stylesTaskDisOverlay.input} type="text" readOnly />
             </div>
 
-            <div style={stylesTaskDisOverlay.formGroup} className="task-dis-form-group">
+            <div style={stylesTaskDisOverlay.formGroup}>
                 <label style={stylesTaskDisOverlay.label}>State:</label>
-                <input style={stylesTaskDisOverlay.input} type="text" value={infoDis[2].state} readOnly />
+                <input style={stylesTaskDisOverlay.input} type="text" readOnly />
             </div>
 
-            <div style={stylesTaskDisOverlay.formGroup} className="task-dis-form-group">
+            <div style={stylesTaskDisOverlay.formGroup}>
                 <label style={stylesTaskDisOverlay.label}>Deadline:</label>
                 <input 
                     style={stylesTaskDisOverlay.input}
                     type="datetime-local" 
-                    value={infoDis[2].deadline ? new Date(infoDis[2].deadline).toISOString().slice(0, 16) : ''} 
                     readOnly 
                 />
             </div>
 
-            <div style={stylesTaskDisOverlay.formGroup} className="task-dis-form-group">
+            <div style={stylesTaskDisOverlay.formGroup}>
                 <label style={stylesTaskDisOverlay.label}>Created Date:</label>
                 <input 
                     style={stylesTaskDisOverlay.input}
                     type="datetime-local" 
-                    value={infoDis[2].doc ? new Date(infoDis[2].doc).toISOString().slice(0, 16) : ''} 
                     readOnly 
                 />
             </div>
 
-            <div style={stylesTaskDisOverlay.formGroup} className="task-dis-form-group">
+            <div style={stylesTaskDisOverlay.formGroup}>
                 <label style={stylesTaskDisOverlay.label}>Info:</label>
-                <input style={stylesTaskDisOverlay.input} type="text" value={infoDis[2].info} readOnly />
+                <input style={stylesTaskDisOverlay.input} type="text" readOnly />
             </div>
 
-            <div style={stylesTaskDisOverlay.formGroup} className="task-dis-form-group">
+            <div style={stylesTaskDisOverlay.formGroup}>
                 <label style={stylesTaskDisOverlay.label}>Remark:</label>
-                <textarea style={stylesTaskDisOverlay.input} value={infoDis[2].remark} rows={6} readOnly></textarea>
-                <textarea style={stylesTaskDisOverlay.input} value={remark} rows={6} onChange={(event) => onRemarkChange(event)}></textarea>
+                <textarea style={stylesTaskDisOverlay.input} rows={6} readOnly></textarea>
+                <textarea style={stylesTaskDisOverlay.input} rows={6} onChange={(event) => onRemarkChange(event)}></textarea>
                 <button style={stylesTaskDisOverlay.submitButton} onClick={(event) => { event.preventDefault(); handelRemarkSave(); }}>SAVE</button>
             </div>
 
-            <div style={stylesTaskDisOverlay.formGroup} className="task-dis-form-group">
+            <div style={stylesTaskDisOverlay.formGroup}>
                 <label style={stylesTaskDisOverlay.label}>Members:</label>
-                <table style={stylesTaskDisOverlay.table} className="task-dis-table">
+                <table style={stylesTaskDisOverlay.table}>
                     <thead>
                         <tr>
                             <th style={stylesTaskDisOverlay.tableCell}>ID</th>
@@ -773,7 +771,7 @@ const Task = ({info})=>{
                 </table>
             </div>
 
-            <div style={stylesTaskDisOverlay.formGroup} className="task-dis-form-group">
+            <div style={stylesTaskDisOverlay.formGroup}>
                 <label style={stylesTaskDisOverlay.label}>Files:</label>
                 {files.length > 0 ? (
                     <ul>
@@ -788,18 +786,18 @@ const Task = ({info})=>{
                 ) : ("")}
             </div>
 
-            <div style={stylesTaskDisOverlay.formGroup} className="task-dis-form-group">
+            <div style={stylesTaskDisOverlay.formGroup}>
                 <label style={stylesTaskDisOverlay.label}>File Uploads:</label>
                 <input style={stylesTaskDisOverlay.input} type="file" onChange={handleFileChange} />
-                <button style={stylesTaskDisOverlay.submitButton} className="task-dis-submit-btn" onClick={(event) => { handleUpload(event); }}>Upload</button>
+                <button style={stylesTaskDisOverlay.submitButton} onClick={(event) => { handleUpload(event); }}>Upload</button>
             </div>
 
             {info.id == infoDis[2].members[0].id && infoDis[2].state !== "COMPLETE" ? (
-                <div style={stylesTaskDisOverlay.buttons} className="task-dis-buttons">
-                    <button style={stylesTaskDisOverlay.submitButton} type="button" onClick={() => onCompleteTaskDis(infoDis[2])} className="task-dis-submit-btn">COMPLETE</button>
+                <div style={stylesTaskDisOverlay.buttons}>
+                    <button style={stylesTaskDisOverlay.submitButton} type="button" onClick={() => onCompleteTaskDis(infoDis[2])}>COMPLETE</button>
                 </div>
             ) : ("")}
-            <button style={stylesTaskDisOverlay.closeButton} className="close-btn-dis" onClick={() => setInfoDis([false, 0])}>Close</button>
+            <button style={stylesTaskDisOverlay.closeButton} onClick={() => setInfoDis([false, 0])}>Close</button>
         </form>
     </div>
 </div>
