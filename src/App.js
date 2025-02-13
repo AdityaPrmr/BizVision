@@ -20,6 +20,7 @@ function App() {
         <Route path="/Register" element={<Register/>}/>
         <Route path="/DashBoardA" element={<DashBoardA/>} />
         <Route path="/DashBoardE" element={<DashBoardE/>} />
+        <Route path="*" element={<Home/>}/>
       </Routes>
     </Router>
   );
