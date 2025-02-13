@@ -708,17 +708,17 @@ const Task = ({info})=>{
             <form>
                 <div style={stylesTaskDisOverlay.formGroup}>
                     <label style={stylesTaskDisOverlay.label}>ID:</label>
-                    <input style={stylesTaskDisOverlay.input} type="text" readOnly />
+                    <input style={stylesTaskDisOverlay.input} value={infoDis[2].id} type="text" readOnly />
                 </div>
 
                 <div style={stylesTaskDisOverlay.formGroup}>
                     <label style={stylesTaskDisOverlay.label}>Name:</label>
-                    <input style={stylesTaskDisOverlay.input} type="text" readOnly />
+                    <input style={stylesTaskDisOverlay.input} value={infoDis[2].name} type="text" readOnly />
                 </div>
 
                 <div style={stylesTaskDisOverlay.formGroup}>
                     <label style={stylesTaskDisOverlay.label}>State:</label>
-                    <input style={stylesTaskDisOverlay.input} type="text" readOnly />
+                    <input style={stylesTaskDisOverlay.input} value={infoDis[2].state} type="text" readOnly />
                 </div>
 
                 <div style={stylesTaskDisOverlay.formGroup}>
@@ -726,6 +726,7 @@ const Task = ({info})=>{
                     <input 
                         style={stylesTaskDisOverlay.input}
                         type="datetime-local" 
+                        value={infoDis[2].deadline ? new Date(infoDis[2].deadline).toISOString().slice(0, 16) : ''} 
                         readOnly 
                     />
                 </div>
@@ -735,19 +736,20 @@ const Task = ({info})=>{
                     <input 
                         style={stylesTaskDisOverlay.input}
                         type="datetime-local" 
+                        value={infoDis[2].doc ? new Date(infoDis[2].doc).toISOString().slice(0, 16) : ''} 
                         readOnly 
                     />
                 </div>
 
                 <div style={stylesTaskDisOverlay.formGroup}>
                     <label style={stylesTaskDisOverlay.label}>Info:</label>
-                    <input style={stylesTaskDisOverlay.input} type="text" readOnly />
+                    <input style={stylesTaskDisOverlay.input} value={infoDis[2].info}  type="text" readOnly />
                 </div>
 
                 <div style={stylesTaskDisOverlay.formGroup}>
                     <label style={stylesTaskDisOverlay.label}>Remark:</label>
-                    <textarea style={stylesTaskDisOverlay.input} rows={6} readOnly></textarea>
-                    <textarea style={stylesTaskDisOverlay.input} rows={6} onChange={(event) => onRemarkChange(event)}></textarea>
+                    <textarea style={stylesTaskDisOverlay.input} value={infoDis[2].remark} rows={6} readOnly></textarea>
+                    <textarea style={stylesTaskDisOverlay.input} value={remark}  rows={6} onChange={(event) => onRemarkChange(event)}></textarea>
                     <button style={stylesTaskDisOverlay.submitButton} onClick={(event) => { event.preventDefault(); handelRemarkSave(); }}>SAVE</button>
                 </div>
 
@@ -783,7 +785,7 @@ const Task = ({info})=>{
                                 </li>
                             ))}
                         </ul>
-                    ) : null}
+                    ) : ""}
                 </div>
 
                 <div style={stylesTaskDisOverlay.formGroup}>
