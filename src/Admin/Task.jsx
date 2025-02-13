@@ -467,7 +467,7 @@ const Task = ({info})=>{
                         </div>
                                 <div className="grid-item">
                                     <label>Members <u>TEAM LEAD -- ID:0</u></label>
-                                    <table className="table-container-dep" style={{ width: "600px", minWidth: "600px",marginLeft:"0px" }}>
+                                    <table className="table-container-dep-overlay" style={{ width: "600px", minWidth: "600px",marginLeft:"0px" }}>
                                         <tbody>
                                         <tr>
                                             <th>ID</th>
@@ -501,7 +501,7 @@ const Task = ({info})=>{
         </div>
         ) :
         (
-        <div className="table-container-dep">  
+        <div className="table-container-dep-task">  
             <table>    
             <tbody> 
             {(info.businessName || info.manager === true) ? (

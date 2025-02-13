@@ -299,7 +299,7 @@ const Employee = ({info})=>{
             </div>
         ) :
         (
-        <div className="table-container-dep">  
+        <div className="table-container-dep-emp">  
             <table>    
             <tbody> 
                 <tr>  
