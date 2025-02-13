@@ -9,75 +9,75 @@ const Task = ({info})=>{
 
     const stylesTaskDisOverlay = {
         overlay: {
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          background: "rgba(0, 0, 0, 0.7)",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          zIndex: 1000,
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background: "rgba(0, 0, 0, 0.7)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 1000,
         },
         content: {
-          background: "white",
-          padding: "20px",
-          width: "50%",
-          maxHeight: "90vh",
-          overflowY: "auto",
-          borderRadius: "10px",
-          boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
+            background: "white",
+            padding: "20px",
+            width: "50%",
+            maxHeight: "90vh",
+            overflowY: "auto",
+            borderRadius: "10px",
+            boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
         },
         formGroup: {
-          display: "flex",
-          flexDirection: "column",
-          marginBottom: "15px",
+            display: "flex",
+            flexDirection: "column",
+            marginBottom: "15px",
         },
         label: {
-          fontWeight: "bold",
-          marginBottom: "5px",
+            fontWeight: "bold",
+            marginBottom: "5px",
         },
         input: {
-          padding: "8px",
-          fontSize: "16px",
-          border: "1px solid #ccc",
-          borderRadius: "5px",
+            padding: "8px",
+            fontSize: "16px",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
         },
         table: {
-          width: "100%",
-          borderCollapse: "collapse",
-          marginTop: "10px",
+            width: "100%",
+            borderCollapse: "collapse",
+            marginTop: "10px",
         },
         tableCell: {
-          border: "1px solid #ccc",
-          padding: "8px",
-          textAlign: "left",
+            border: "1px solid #ccc",
+            padding: "8px",
+            textAlign: "left",
         },
         buttons: {
-          display: "flex",
-          justifyContent: "space-between",
-          marginTop: "15px",
+            display: "flex",
+            justifyContent: "space-between",
+            marginTop: "15px",
         },
         submitButton: {
-          background: "#007bff",
-          color: "white",
-          padding: "10px 15px",
-          fontSize: "16px",
-          border: "none",
-          cursor: "pointer",
-          borderRadius: "5px",
+            background: "#007bff",
+            color: "white",
+            padding: "10px 15px",
+            fontSize: "16px",
+            border: "none",
+            cursor: "pointer",
+            borderRadius: "5px",
         },
         closeButton: {
-          background: "red",
-          color: "white",
-          padding: "10px 15px",
-          fontSize: "16px",
-          border: "none",
-          cursor: "pointer",
-          borderRadius: "5px",
+            background: "red",
+            color: "white",
+            padding: "10px 15px",
+            fontSize: "16px",
+            border: "none",
+            cursor: "pointer",
+            borderRadius: "5px",
         },
-      };
+    };
 
       
 
@@ -703,105 +703,104 @@ const Task = ({info})=>{
         <h1>MANAGE TASK</h1>
         {infoDis[0] == true ? (<>
             <div style={stylesTaskDisOverlay.overlay}>
-    <div style={stylesTaskDisOverlay.content}>
-        <h2>Task Details</h2>
-        <form>
-            <div style={stylesTaskDisOverlay.formGroup}>
-                <label style={stylesTaskDisOverlay.label}>ID:</label>
-                <input style={stylesTaskDisOverlay.input} type="text" readOnly />
-            </div>
-
-            <div style={stylesTaskDisOverlay.formGroup}>
-                <label style={stylesTaskDisOverlay.label}>Name:</label>
-                <input style={stylesTaskDisOverlay.input} type="text" readOnly />
-            </div>
-
-            <div style={stylesTaskDisOverlay.formGroup}>
-                <label style={stylesTaskDisOverlay.label}>State:</label>
-                <input style={stylesTaskDisOverlay.input} type="text" readOnly />
-            </div>
-
-            <div style={stylesTaskDisOverlay.formGroup}>
-                <label style={stylesTaskDisOverlay.label}>Deadline:</label>
-                <input 
-                    style={stylesTaskDisOverlay.input}
-                    type="datetime-local" 
-                    readOnly 
-                />
-            </div>
-
-            <div style={stylesTaskDisOverlay.formGroup}>
-                <label style={stylesTaskDisOverlay.label}>Created Date:</label>
-                <input 
-                    style={stylesTaskDisOverlay.input}
-                    type="datetime-local" 
-                    readOnly 
-                />
-            </div>
-
-            <div style={stylesTaskDisOverlay.formGroup}>
-                <label style={stylesTaskDisOverlay.label}>Info:</label>
-                <input style={stylesTaskDisOverlay.input} type="text" readOnly />
-            </div>
-
-            <div style={stylesTaskDisOverlay.formGroup}>
-                <label style={stylesTaskDisOverlay.label}>Remark:</label>
-                <textarea style={stylesTaskDisOverlay.input} rows={6} readOnly></textarea>
-                <textarea style={stylesTaskDisOverlay.input} rows={6} onChange={(event) => onRemarkChange(event)}></textarea>
-                <button style={stylesTaskDisOverlay.submitButton} onClick={(event) => { event.preventDefault(); handelRemarkSave(); }}>SAVE</button>
-            </div>
-
-            <div style={stylesTaskDisOverlay.formGroup}>
-                <label style={stylesTaskDisOverlay.label}>Members:</label>
-                <table style={stylesTaskDisOverlay.table}>
-                    <thead>
-                        <tr>
-                            <th style={stylesTaskDisOverlay.tableCell}>ID</th>
-                            <th style={stylesTaskDisOverlay.tableCell}>Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {infoDis[2].members.map((member, index) => (
-                            <tr key={index}>
-                                <td style={stylesTaskDisOverlay.tableCell}>{member.id}</td>
-                                <td style={stylesTaskDisOverlay.tableCell}>{member.name} {index == 0 ? "~> LEAD" : ""}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
-
-            <div style={stylesTaskDisOverlay.formGroup}>
-                <label style={stylesTaskDisOverlay.label}>Files:</label>
-                {files.length > 0 ? (
-                    <ul>
-                        {files.map((file) => (
-                            <li key={file._id}>
-                                <a href={`/api/file/${file.path}`} target="_blank" rel="noopener noreferrer">
-                                    {file.filename}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                ) : ("")}
-            </div>
-
-            <div style={stylesTaskDisOverlay.formGroup}>
-                <label style={stylesTaskDisOverlay.label}>File Uploads:</label>
-                <input style={stylesTaskDisOverlay.input} type="file" onChange={handleFileChange} />
-                <button style={stylesTaskDisOverlay.submitButton} onClick={(event) => { handleUpload(event); }}>Upload</button>
-            </div>
-
-            {info.id == infoDis[2].members[0].id && infoDis[2].state !== "COMPLETE" ? (
-                <div style={stylesTaskDisOverlay.buttons}>
-                    <button style={stylesTaskDisOverlay.submitButton} type="button" onClick={() => onCompleteTaskDis(infoDis[2])}>COMPLETE</button>
+        <div style={stylesTaskDisOverlay.content}>
+            <h2>Task Details</h2>
+            <form>
+                <div style={stylesTaskDisOverlay.formGroup}>
+                    <label style={stylesTaskDisOverlay.label}>ID:</label>
+                    <input style={stylesTaskDisOverlay.input} type="text" readOnly />
                 </div>
-            ) : ("")}
-            <button style={stylesTaskDisOverlay.closeButton} onClick={() => setInfoDis([false, 0])}>Close</button>
-        </form>
-    </div>
-</div>
 
+                <div style={stylesTaskDisOverlay.formGroup}>
+                    <label style={stylesTaskDisOverlay.label}>Name:</label>
+                    <input style={stylesTaskDisOverlay.input} type="text" readOnly />
+                </div>
+
+                <div style={stylesTaskDisOverlay.formGroup}>
+                    <label style={stylesTaskDisOverlay.label}>State:</label>
+                    <input style={stylesTaskDisOverlay.input} type="text" readOnly />
+                </div>
+
+                <div style={stylesTaskDisOverlay.formGroup}>
+                    <label style={stylesTaskDisOverlay.label}>Deadline:</label>
+                    <input 
+                        style={stylesTaskDisOverlay.input}
+                        type="datetime-local" 
+                        readOnly 
+                    />
+                </div>
+
+                <div style={stylesTaskDisOverlay.formGroup}>
+                    <label style={stylesTaskDisOverlay.label}>Created Date:</label>
+                    <input 
+                        style={stylesTaskDisOverlay.input}
+                        type="datetime-local" 
+                        readOnly 
+                    />
+                </div>
+
+                <div style={stylesTaskDisOverlay.formGroup}>
+                    <label style={stylesTaskDisOverlay.label}>Info:</label>
+                    <input style={stylesTaskDisOverlay.input} type="text" readOnly />
+                </div>
+
+                <div style={stylesTaskDisOverlay.formGroup}>
+                    <label style={stylesTaskDisOverlay.label}>Remark:</label>
+                    <textarea style={stylesTaskDisOverlay.input} rows={6} readOnly></textarea>
+                    <textarea style={stylesTaskDisOverlay.input} rows={6} onChange={(event) => onRemarkChange(event)}></textarea>
+                    <button style={stylesTaskDisOverlay.submitButton} onClick={(event) => { event.preventDefault(); handelRemarkSave(); }}>SAVE</button>
+                </div>
+
+                <div style={stylesTaskDisOverlay.formGroup}>
+                    <label style={stylesTaskDisOverlay.label}>Members:</label>
+                    <table style={stylesTaskDisOverlay.table}>
+                        <thead>
+                            <tr>
+                                <th style={stylesTaskDisOverlay.tableCell}>ID</th>
+                                <th style={stylesTaskDisOverlay.tableCell}>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {infoDis[2].members.map((member, index) => (
+                                <tr key={index}>
+                                    <td style={stylesTaskDisOverlay.tableCell}>{member.id}</td>
+                                    <td style={stylesTaskDisOverlay.tableCell}>{member.name} {index === 0 ? "~> LEAD" : ""}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style={stylesTaskDisOverlay.formGroup}>
+                    <label style={stylesTaskDisOverlay.label}>Files:</label>
+                    {files.length > 0 ? (
+                        <ul>
+                            {files.map((file) => (
+                                <li key={file._id}>
+                                    <a href={`/api/file/${file.path}`} target="_blank" rel="noopener noreferrer">
+                                        {file.filename}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    ) : null}
+                </div>
+
+                <div style={stylesTaskDisOverlay.formGroup}>
+                    <label style={stylesTaskDisOverlay.label}>File Uploads:</label>
+                    <input style={stylesTaskDisOverlay.input} type="file" onChange={handleFileChange} />
+                    <button style={stylesTaskDisOverlay.submitButton} onClick={(event) => { handleUpload(event); }}>Upload</button>
+                </div>
+
+                {info.id === infoDis[2].members[0].id && infoDis[2].state !== "COMPLETE" ? (
+                    <div style={stylesTaskDisOverlay.buttons}>
+                        <button style={stylesTaskDisOverlay.submitButton} type="button" onClick={() => onCompleteTaskDis(infoDis[2])}>COMPLETE</button>
+                    </div>
+                ) : null}
+                <button style={stylesTaskDisOverlay.closeButton} onClick={() => setInfoDis([false, 0])}>Close</button>
+            </form>
+        </div>
+    </div>
         </>): ("")}
         {!v && (info.businessName || info.manager === true) ? (
             <div style={stylesTaskAdd.overlayTask}>
