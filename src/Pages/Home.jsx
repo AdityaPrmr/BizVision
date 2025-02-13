@@ -5,7 +5,7 @@ import '../Assets/bootstrap-icons.css';
 import '../Assets/fontstyle.css';
 import '../Assets/layout.css';
 import '../Assets/animation.css';
-// import '../Assets/style.css';
+import '../Assets/style.css';
 import hero1 from '../Assets/hero1.webp';
 import hero2 from '../Assets/hero2.webp';
 import blob from '../Assets/blob.svg';
@@ -20,7 +20,7 @@ const Home = () => {
 
 
     const Mid = (
-        <div className="mid">
+        <>
         <span className="fade"></span>
         <main>
             <section className="hero-banner">
@@ -327,7 +327,7 @@ const Home = () => {
                 </div>
             </div>
         </footer>
-    </div>
+        </>
     );
 
 
@@ -347,9 +347,9 @@ const Home = () => {
                     </ul>
                 </div>
             </nav>
-            {/* <div className="homeDis">
+            <div>
                 {Mid}
-            </div> */}
+            </div>
             <footer className="f">
                 <p>&copy; 2025 Business Management. All rights reserved.</p>
                 <div className="footer-links">
