@@ -4,6 +4,285 @@ import "./Department.css";
 import "./Task.css";
 
 const Task = ({info})=>{
+
+
+    const stylesTableDepOverlay = {
+        tableContainer: {
+          width: "380px",
+          height: "auto",
+          overflowY: "auto",
+          border: "1px solid #ccc",
+          borderRadius: "8px",
+          padding: "10px",
+          background: "#f9f9f9",
+          margin: "0px 0px 0px 100px",
+        },
+      
+        table: {
+          width: "100%",
+          borderCollapse: "collapse",
+        },
+      
+        tableCell: {
+          border: "1px solid #ddd",
+          padding: "8px",
+          textAlign: "center",
+        },
+      
+        tableHeader: {
+          background: "#007bff",
+          color: "white",
+        },
+      
+        inputField: {
+          width: "90%",
+          padding: "5px",
+          border: "1px solid #ccc",
+          borderRadius: "4px",
+          margin: "0",
+        },
+      
+        addButton: {
+          padding: "5px 10px",
+          border: "none",
+          cursor: "pointer",
+          borderRadius: "4px",
+          background: "#28a745",
+          color: "white",
+        },
+      
+        deleteButton: {
+          padding: "5px 10px",
+          border: "none",
+          cursor: "pointer",
+          borderRadius: "4px",
+          background: "#dc3545",
+          color: "white",
+        },
+      
+        addButtonHover: {
+          background: "#218838",
+        },
+      
+        deleteButtonHover: {
+          background: "#c82333",
+        },
+      
+        separator: {
+          padding: "2px",
+        },
+      
+        cursorPointer: {
+          cursor: "pointer",
+        },
+      };
+      
+
+
+    const stylesTableDepTask = {
+        tableContainer: {
+          width: "380px",
+          height: "auto",
+          overflowY: "auto",
+          border: "1px solid #ccc",
+          borderRadius: "8px",
+          padding: "10px",
+          background: "#f9f9f9",
+          margin: "0px 0px 0px 100px",
+        },
+      
+        table: {
+          width: "100%",
+          borderCollapse: "collapse",
+        },
+      
+        columnOne: {
+          width: "100px",
+        },
+      
+        columnTwo: {
+          width: "220px",
+        },
+      
+        tableCell: {
+          border: "1px solid #ddd",
+          padding: "8px",
+          textAlign: "center",
+        },
+      
+        tableHeader: {
+          background: "#007bff",
+          color: "white",
+        },
+      
+        input: {
+          width: "90%",
+          padding: "5px",
+          border: "1px solid #ccc",
+          borderRadius: "4px",
+          margin: "0",
+        },
+      
+        addButton: {
+          padding: "5px 10px",
+          border: "none",
+          cursor: "pointer",
+          borderRadius: "4px",
+          background: "#28a745",
+          color: "white",
+        },
+      
+        deleteButton: {
+          padding: "5px 10px",
+          border: "none",
+          cursor: "pointer",
+          borderRadius: "4px",
+          background: "#dc3545",
+          color: "white",
+        },
+      
+        addButtonHover: {
+          background: "#218838",
+        },
+      
+        deleteButtonHover: {
+          background: "#c82333",
+        },
+      };
+      
+
+
+
+    const stylesTaskAdd = {
+        taskAdd: {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          maxWidth: "100%", // Increased width
+          maxHeight: "90vh", // Prevent form from exceeding screen
+        },
+      
+        overlayTask: {
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100vh",
+          background: "rgba(0, 0, 0, 0.6)", // Semi-transparent black
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          zIndex: 1000,
+          padding: "20px", // Prevents form from touching the screen edges
+        },
+      
+        gridCard: {
+          background: "linear-gradient(135deg, #ffffff, #f8f9fa)", // Soft gradient background
+          borderRadius: "15px 30px 30px 15px",
+          boxShadow: "0 10px 25px rgba(0, 0, 0, 0.2)", // Deeper shadow for 3D effect
+          padding: "30px",
+          width: "100% !important",
+          maxWidth: "1000px !important",
+          maxHeight: "85vh",
+          overflowY: "auto",
+          border: "2px solid #e0e0e0", // Light border for structure
+        },
+      
+        formTitle: {
+          textAlign: "center",
+          marginBottom: "25px",
+          fontSize: "1.8rem",
+          fontWeight: "bold",
+          color: "#333",
+        },
+      
+        gridContainer: {
+          display: "grid",
+          gridTemplateColumns: "repeat(2, 1fr)",
+          gap: "20px",
+        },
+      
+        gridItem: {
+          display: "flex",
+          flexDirection: "column",
+        },
+      
+        label: {
+          fontSize: "15px",
+          fontWeight: "bold",
+          marginBottom: "5px",
+          color: "#444",
+        },
+      
+        input: {
+          padding: "12px",
+          borderRadius: "10px",
+          border: "1px solid #ccc",
+          transition: "0.3s",
+          fontSize: "14px",
+          backgroundColor: "#f9f9f9",
+        },
+      
+        inputFocus: {
+          borderColor: "#007bff",
+          outline: "none",
+          boxShadow: "0 0 8px rgba(0, 123, 255, 0.3)",
+        },
+      
+        fullWidth: {
+          gridColumn: "span 2",
+          textAlign: "center",
+        },
+      
+        button: {
+          padding: "12px",
+          width: "100%",
+          border: "none",
+          background: "linear-gradient(90deg, #007bff, #0056b3)",
+          color: "white",
+          fontSize: "16px",
+          fontWeight: "bold",
+          borderRadius: "8px",
+          cursor: "pointer",
+          transition: "0.3s",
+        },
+      
+        buttonDisabled: {
+          background: "linear-gradient(90deg, #cccccc, #999999)", // Gray out effect
+          color: "#666666", // Dim text
+          cursor: "not-allowed",
+          opacity: 0.6,
+        },
+      
+        buttonHover: {
+          background: "linear-gradient(90deg, #0056b3, #003c80)",
+        },
+      
+        closeBtn: {
+          marginTop: "15px",
+          background: "linear-gradient(90deg, #ff4d4d, #d60000)",
+          fontWeight: "bold",
+        },
+      
+        closeBtnHover: {
+          background: "linear-gradient(90deg, #d60000, #a00000)",
+        },
+      };
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     const [v,setV] = useState(true);
     const [emp, setEmp] = useState([]);
     const [taskData,setTaskData] = useState([]);
@@ -448,92 +727,141 @@ const Task = ({info})=>{
 
         </>): ("")}
         {!v && (info.businessName || info.manager === true) ? (
-            <div className="overlay-task">
-            <div className="Task-Add">
-                <div className="grid-card">
-                    <h2 className="form-title">Add Task</h2>
-                    <form className="grid-container" onSubmit={(event) => handleSubmit(event)}>
-                        <div className="grid-item">
-                            <label>Name</label>
-                            <input type="text" name="name" required onChange={handleChange} />
+            <div style={stylesTaskAdd.overlayTask}>
+            <div style={stylesTaskAdd.taskAdd}>
+                <div style={stylesTaskAdd.gridCard}>
+                    <h2 style={stylesTaskAdd.formTitle}>Add Task</h2>
+                    <form style={stylesTaskAdd.gridContainer} onSubmit={(event) => handleSubmit(event)}>
+                        <div style={stylesTaskAdd.gridItem}>
+                            <label style={stylesTaskAdd.label}>Name</label>
+                            <input 
+                                type="text" 
+                                name="name" 
+                                required 
+                                onChange={handleChange} 
+                                style={stylesTaskAdd.input} 
+                            />
                         </div>
-                        <div className="grid-item">
-                            <label>Deadline</label>
-                            <input type="date" name="deadline" required onChange={handleChange} />
+                        <div style={stylesTaskAdd.gridItem}>
+                            <label style={stylesTaskAdd.label}>Deadline</label>
+                            <input 
+                                type="date" 
+                                name="deadline" 
+                                required 
+                                onChange={handleChange} 
+                                style={stylesTaskAdd.input} 
+                            />
                         </div>
-                        <div className="grid-item">
-                            <label>Info</label>
-                            <textarea name="info" required rows={5} onChange={handleChange}></textarea>
+                        <div style={stylesTaskAdd.gridItem}>
+                            <label style={stylesTaskAdd.label}>Info</label>
+                            <textarea 
+                                name="info" 
+                                required 
+                                rows={5} 
+                                onChange={handleChange} 
+                                style={stylesTaskAdd.input}
+                            ></textarea>
                         </div>
-                                <div className="grid-item">
-                                    <label>Members <u>TEAM LEAD -- ID:0</u></label>
-                                    <table className="table-container-dep-overlay" style={{ width: "600px", minWidth: "600px",marginLeft:"0px" }}>
-                                        <tbody>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>NAME</th>
-                                            <th>ACTION</th>
+        
+                        <div style={stylesTaskAdd.gridItem}>
+                            <label style={stylesTaskAdd.label}>
+                                Members <u>TEAM LEAD -- ID:0</u>
+                            </label>
+                            <table style={stylesTableDepOverlay.table}>
+                                <tbody>
+                                    <tr>
+                                        <th style={{ ...stylesTableDepOverlay.tableCell, ...stylesTableDepOverlay.tableHeader }}>ID</th>
+                                        <th style={{ ...stylesTableDepOverlay.tableCell, ...stylesTableDepOverlay.tableHeader }}>NAME</th>
+                                        <th style={{ ...stylesTableDepOverlay.tableCell, ...stylesTableDepOverlay.tableHeader }}>ACTION</th>
+                                    </tr>
+
+                                    {selectedEmp.map((e, index) => (
+                                        <tr key={index}>
+                                            <td style={stylesTableDepOverlay.tableCell}>{index}</td>
+                                            <td style={stylesTableDepOverlay.tableCell}>
+                                                <select
+                                                    required={selectedEmp.length === 0}
+                                                    onChange={(event) => handleEMPChange(event, index)}
+                                                    style={stylesTableDepOverlay.selectField}
+                                                >
+                                                    <option value="">Select EMPLOYEE</option>
+                                                    {emp.map((d) => (
+                                                        <option key={d.id} value={[d.name, d.id]}>{d.name}</option>
+                                                    ))}
+                                                </select>
+                                            </td>
+                                            <td style={stylesTableDepOverlay.tableCell}>
+                                                <button
+                                                    onClick={(event) => handelEmpDelete(event, index)}
+                                                    disabled={e.id === ""}
+                                                    style={e.id === "" ? stylesTableDepOverlay.buttonDisabled : stylesTableDepOverlay.button}
+                                                >
+                                                    DELETE
+                                                </button>
+                                            </td>
                                         </tr>
-                                        {selectedEmp.map((e,index)=>(
-                                            <tr key={index}>
-                                                <td>{index}</td>
-                                                <td>
-                                                    <select  required={selectedEmp.length === 0}  onChange={(event)=>{handleEMPChange(event,index);}}>
-                                                        <option value="">Select EMPLOYEE</option> 
-                                                        {emp.map((d) => (
-                                                            <option key={d.id} value={[d.name,d.id]}>{d.name}</option>
-                                                        ))}
-                                                    </select>
-                                                </td>
-                                                <td><button  onClick={(event)=>{handelEmpDelete(event,index);}} disabled={e.id === "" ? true: false}>DELETE</button></td>
-                                            </tr>
-                                        ))}
-                                        </tbody>
-                                    </table>
-                                </div>
-                        <div className="grid-item full-width">
-                            <button type="submit">Submit</button>
+                                    ))}
+                                </tbody>
+                            </table>
+
+                        </div>
+        
+                        <div style={{ ...stylesTaskAdd.gridItem, ...stylesTaskAdd.fullWidth }}>
+                            <button type="submit" style={stylesTaskAdd.button}>Submit</button>
                         </div>
                     </form>
-                    <button className="close-btn" onClick={handleAdd}>Close</button>
+                    <button style={{ ...stylesTaskAdd.button, ...stylesTaskAdd.closeBtn }} onClick={handleAdd}>
+                        Close
+                    </button>
                 </div>
             </div>
         </div>
+        
         ) :
         (
-        <div className="table-container-dep-task">  
-            <table>    
-            <tbody> 
-            {(info.businessName || info.manager === true) ? (
-                    <>
-                        <tr>  
-                            <td colSpan="4">
-                                <button className="add-btn" onClick={handleAdd}>ADD TASK</button>
-                            </td>  
-                        </tr> 
-                        <tr>
-                            <td style={{ padding: "2px" }} colSpan="4">
-                                <hr />
-                            </td>
-                        </tr>
-                    </>
-            ) : ""}
-                
-                <tr>  
-                    <th>ID</th>  
-                    <th>Name</th>
-                    <th>STATUS</th> 
-                </tr>     
-                {taskData?.map((info) => (  
-                    <tr key={info.id} style={{ cursor: "pointer" }} onClick={()=>{handelDisplay(info.id);}}>  
-                    <td>{info.id}</td>  
-                    <td>{info.name}</td>  
-                    <td>{info.state}</td> 
-                    </tr>  
-                ))}  
+            <div style={stylesTableDepTask.tableContainer}>
+            <table style={stylesTableDepTask.table}>
+                <tbody>
+                    {(info.businessName || info.manager === true) ? (
+                        <>
+                            <tr>  
+                                <td colSpan="4">
+                                    <button 
+                                        style={stylesTableDepTask.addButton} 
+                                        onClick={handleAdd}
+                                    >
+                                        ADD TASK
+                                    </button>
+                                </td>  
+                            </tr> 
+                            <tr>
+                                <td style={stylesTableDepTask.separator} colSpan="4">
+                                    <hr />
+                                </td>
+                            </tr>
+                        </>
+                    ) : null}
+                    
+                    <tr>  
+                        <th style={{ ...stylesTableDepTask.tableCell, ...stylesTableDepTask.tableHeader }}>ID</th>  
+                        <th style={{ ...stylesTableDepTask.tableCell, ...stylesTableDepTask.tableHeader }}>Name</th>
+                        <th style={{ ...stylesTableDepTask.tableCell, ...stylesTableDepTask.tableHeader }}>STATUS</th> 
+                    </tr>     
+        
+                    {taskData?.map((info) => (  
+                        <tr 
+                            key={info.id} 
+                            style={stylesTableDepTask.cursorPointer} 
+                            onClick={() => handelDisplay(info.id)}
+                        >  
+                            <td style={stylesTableDepTask.tableCell}>{info.id}</td>  
+                            <td style={stylesTableDepTask.tableCell}>{info.name}</td>  
+                            <td style={stylesTableDepTask.tableCell}>{info.state}</td> 
+                        </tr>  
+                    ))}  
                 </tbody>  
             </table>  
-        </div>  
+        </div>        
         ) }
     </>);
 };

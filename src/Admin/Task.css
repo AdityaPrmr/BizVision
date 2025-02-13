@@ -12,6 +12,9 @@
     z-index: 1000;
 }
 
+.task-dis-overlay 
+{
+
 /* Modal content */
 .task-dis-overlay-content {
     background: white;
@@ -95,4 +98,6 @@ input, textarea {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
 }
