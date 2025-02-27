@@ -46,6 +46,10 @@ const Register = () => {
             {
                 navigate("/DashBoardA");
             }
+            else
+            {
+                console.log(update);
+            }
         }
         catch(erorr)
         {
@@ -101,14 +105,14 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter Business Name"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, businessName: event.target.value }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, businessName: event.target.value }))}
                                         required
                                     />
                                 </div>
                                 <div>
                                     <label>Business Type <p className="r">*</p></label>
                                     <select
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, businessType: event.target.value }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, businessType: event.target.value }))}
                                         required
                                     >
                                         <option value="">Select Business Type</option>
@@ -125,7 +129,7 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter Industry"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, industry: event.target.value }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, industry: event.target.value }))}
                                         required
                                     />
                                 </div>
@@ -134,7 +138,7 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter Registration Number"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, registrationNumber: event.target.value }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, registrationNumber: event.target.value }))}
                                     />
                                 </div>
                                 <div>
@@ -142,7 +146,7 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter GSTIN"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, gstin: event.target.value }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, gstin: event.target.value }))}
                                     />
                                 </div>
                                 <div>
@@ -150,7 +154,7 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter Business Address"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, businessAddress: event.target.value }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, businessAddress: event.target.value }))}
                                         required
                                     />
                                 </div>
@@ -159,7 +163,7 @@ const Register = () => {
                                     <input
                                         type="email"
                                         placeholder="Enter Business Email"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, businessEmail: event.target.value }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, businessEmail: event.target.value }))}
                                         required
                                     />
                                 </div>
@@ -168,7 +172,7 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter Business Phone"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, businessPhone: event.target.value }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, businessPhone: event.target.value }))}
                                         required
                                     />
                                 </div>
@@ -187,7 +191,7 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter Owner Name"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, name: event.target.value } }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, name: event.target.value } }))}
                                         required
                                     />
                                 </div>
@@ -196,7 +200,7 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter Contact Number"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, contactNumber: event.target.value } }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, contactNumber: event.target.value } }))}
                                         required
                                     />
                                 </div>
@@ -205,7 +209,7 @@ const Register = () => {
                                     <input
                                         type="email"
                                         placeholder="Enter Owner Email"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, email: event.target.value } }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, email: event.target.value } }))}
                                         required
                                     />
                                 </div>
@@ -214,7 +218,7 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter Aadhaar/PAN"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, aadhaarOrPAN: event.target.value } }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, aadhaarOrPAN: event.target.value } }))}
                                         required
                                     />
                                 </div>
@@ -223,7 +227,7 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter Address"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, residentialAddress: event.target.value } }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, residentialAddress: event.target.value } }))}
                                         required
                                     />
                                 </div>
@@ -232,14 +236,14 @@ const Register = () => {
                                     <input
                                         type="number"
                                         placeholder="Enter %"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, ownershipPercentage: event.target.value } }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, ownershipPercentage: event.target.value } }))}
                                         required
                                     />
                                 </div>
                                 <div>
                                     <label>ID Proof Type <p className="r">*</p></label>
                                     <select
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, idProofType: event.target.value } }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, idProofType: event.target.value } }))}
                                         required
                                     >
                                         <option value="">Select ID Proof Type</option>
@@ -254,7 +258,7 @@ const Register = () => {
                                     <input
                                         type="text"
                                         placeholder="Enter ID Proof Number"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, idProofNumber: event.target.value } }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, owner: { ...prevData.owner, idProofNumber: event.target.value } }))}
                                         required
                                     />
                                 </div>
@@ -274,7 +278,7 @@ const Register = () => {
                                     <input
                                         type="password"
                                         placeholder="Enter Password"
-                                        onBlur={(event) => setData(prevData => ({ ...prevData, password: event.target.value }))}
+                                        onChange={(event) => setData(prevData => ({ ...prevData, password: event.target.value }))}
                                         required
                                     />
                                 </div>
@@ -283,7 +287,7 @@ const Register = () => {
                                     <input
                                         type="password"
                                         placeholder="Confirm Password"
-                                        onBlur={(event) => setCp(event.target.value)}
+                                        onChange={(event) => setCp(event.target.value)}
                                         required
                                     />
                                 </div>
