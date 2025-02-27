@@ -15,7 +15,7 @@ const Login = () => {
         e.preventDefault();
         setLoading(true);
         setError("");
-    
+        localStorage.removeItem("user");
         try {
             const response = await axios.post("/api/auth/login", {
                 email,
@@ -35,7 +35,7 @@ const Login = () => {
                 }
                 else if(!response.data.sno)
                 {
-                    localStorage.setItem("user", JSON.stringify(response.data._id)); // Store user data
+                    localStorage.setItem("user", response.data._id); // Store user data
                     navigate("/DashBoardSA");
                 }
                 else

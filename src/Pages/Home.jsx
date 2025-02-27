@@ -17,7 +17,7 @@ import overlay from '../Assets/overlay.webp';
 import favicon from '../Assets/favicon.png';
 const Home = () => {
 
-
+    localStorage.removeItem("user");
 
     const Mid = (
         <>
