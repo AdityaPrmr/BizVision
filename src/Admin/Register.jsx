@@ -44,7 +44,7 @@ const Register = () => {
             console.log(update);
             if(update.data.businessName == data.businessName)
             {
-                navigate("/DashBoardA");
+                navigate("/Login");
             }
             else
             {
