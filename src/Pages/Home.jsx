@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate  } from "react-router-dom";
 import "./Home.css";
 import logo from "../Assets/logo.png";
 import '../Assets/bootstrap-icons.css';
@@ -15,9 +15,14 @@ import work2 from '../Assets/work2.webp';
 import work3 from '../Assets/work3.webp';
 import overlay from '../Assets/overlay.webp';
 import favicon from '../Assets/favicon.png';
+import { useEffect } from "react";
 const Home = () => {
-
-    localStorage.removeItem("user");
+    const navigate = useNavigate();
+    useEffect(()=>{
+        if (localStorage.getItem("user")) {
+            navigate("/Login");
+        }
+    },[navigate]);
 
     const Mid = (
         <>
