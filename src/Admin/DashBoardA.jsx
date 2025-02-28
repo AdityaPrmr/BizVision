@@ -143,7 +143,16 @@ const DashBoardA = ()=>{
                             </table>
                         </div>
                         </div>
-                      )  : <p>Loading...</p>}
+                      )  : <h1 style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        height: "100vh",
+                        fontSize: "3rem",
+                        fontWeight: "bold"
+                    }}>
+                        🔄 Loading...
+                    </h1>}
                 <div className="grid-container">
                     <div className="grid-item">
                     {data ? <Department info={data} /> : <p>Loading...</p>}

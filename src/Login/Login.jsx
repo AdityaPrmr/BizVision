@@ -93,7 +93,10 @@ const Login = () => {
             else
             {
                 let response = await axios.post("/api/auth/res", {email: resEmail});
+                if(response != null)
+                {
                 setNotification({ message: "Send details successfully, if account exists.", type: "success" });
+                }
             }
         }
         catch(error)
