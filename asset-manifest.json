@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BizVersion-react/static/css/main.eaca5053.css",
-    "main.js": "/BizVersion-react/static/js/main.94e5f149.js",
+    "main.js": "/BizVersion-react/static/js/main.ef1ded09.js",
     "static/media/bootstrap-icons.woff?": "/BizVersion-react/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
     "static/media/Nunito-Italic.ttf": "/BizVersion-react/static/media/Nunito-Italic.cedc8a593d8ba361dcf4.ttf",
     "static/media/Nunito-Regular.ttf": "/BizVersion-react/static/media/Nunito-Regular.9d7a6e03c6e3ed49c7ac.ttf",
@@ -21,10 +21,10 @@
     "index.html": "/BizVersion-react/index.html",
     "static/media/blob.svg": "/BizVersion-react/static/media/blob.8bcc1bd21d14f3366d9ad4e49d89720e.svg",
     "main.eaca5053.css.map": "/BizVersion-react/static/css/main.eaca5053.css.map",
-    "main.94e5f149.js.map": "/BizVersion-react/static/js/main.94e5f149.js.map"
+    "main.ef1ded09.js.map": "/BizVersion-react/static/js/main.ef1ded09.js.map"
   },
   "entrypoints": [
     "static/css/main.eaca5053.css",
-    "static/js/main.94e5f149.js"
+    "static/js/main.ef1ded09.js"
   ]
 }
