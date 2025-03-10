@@ -13,7 +13,7 @@ const DashBoardSA = ()=>{
             <nav>
                 <ul>
                     <li><img src={logo} alt="Logo" /></li>
-                    <li><h1>Business Management</h1></li>
+                    <li><h1>Biz Version</h1></li>
                 </ul>
                 <div className="right">
                     <ul>
@@ -27,7 +27,7 @@ const DashBoardSA = ()=>{
             </div>
 
             <footer>
-                <p>&copy; 2025 Business Management. All rights reserved.</p>
+                <p>&copy; 2025 Biz Version. All rights reserved.</p>
                 <div className="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>

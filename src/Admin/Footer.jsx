@@ -2,7 +2,7 @@ import "./HF.css";
 const Footer = ()=>{
     return(<>
             <footer id="admin">
-                <p>&copy; 2025 Business Management. All rights reserved.</p>
+                <p>&copy; 2025 Biz Version. All rights reserved.</p>
                 <div className="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>

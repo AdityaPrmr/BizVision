@@ -209,7 +209,7 @@ const Login = () => {
                             <div className="left">
                                 <ul>
                                     <li><img src={logo} alt="Logo" /></li>
-                                    <li><h1>Business Management</h1></li>
+                                    <li><h1>Biz Version</h1></li>
                                     <li><Link to="/">HOME</Link></li>
                                 </ul>
                             </div>
@@ -259,7 +259,7 @@ const Login = () => {
                     </div>
 
                     <footer>
-                        <p>&copy; 2025 Business Management. All rights reserved.</p>
+                        <p>&copy; 2025 Biz Verion. All rights reserved.</p>
                         <div className="footer-links">
                             <a href="#">Privacy Policy</a>
                             <a href="#">Terms of Service</a>

@@ -188,9 +188,6 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <a href="service.html" className="btn-bg2 border-round mt-25">
-                    View our services
-                </a>
             </section>
     
             <section className="contained">
@@ -248,7 +245,7 @@ const Home = () => {
                 </div>
             </section>
     
-            <section className="subscribe bg-primary-foot" style={{ backgroundImage: `url(${overlay})` }}>
+            <section className="subscribe bg-primary-foot" id="subb" style={{ backgroundImage: `url(${overlay})` }}>
                 <div className="contained row ta-center">
                     <div className="col-balance fc-white">
                         <h3 className="mb-a ff-damion mt-a">Subscribe to our newsletter:</h3>
@@ -267,7 +264,7 @@ const Home = () => {
                 <p className="col-wide mlmr-a">
                     Ready to take your business to the next level? Contact us today to learn how BizVision can help you achieve your goals.
                 </p>
-                <a href="contact.html" className="btn-bg1 border-round mt-25">
+                <a href="#subb" className="btn-bg1 border-round mt-25">
                     Get in touch
                 </a>
             </section>
@@ -356,7 +353,7 @@ const Home = () => {
                 {Mid}
             </div>
             <footer className="f">
-                <p>&copy; 2025 Business Management. All rights reserved.</p>
+                <p>&copy; 2025 Biz Version. All rights reserved.</p>
                 <div className="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>

@@ -41,7 +41,6 @@ const Register = () => {
         const update = await axios.post("/api/user",data);
         try
         {
-            console.log(update);
             if(update.data.businessName == data.businessName)
             {
                 navigate("/Login");
@@ -300,7 +299,7 @@ const Register = () => {
             </div>
 
             <footer>
-                <p>&copy; 2025 Business Management. All rights reserved.</p>
+                <p>&copy; 2025 Biz Version. All rights reserved.</p>
                 <div className="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
