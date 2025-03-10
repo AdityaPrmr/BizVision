@@ -353,7 +353,7 @@ const Home = () => {
                 {Mid}
             </div>
             <footer className="f">
-                <p>&copy; 2025 Biz Version. All rights reserved.</p>
+                <p>&copy; 2025 Biz Vision. All rights reserved.</p>
                 <div className="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>

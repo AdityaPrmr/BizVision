@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/BizVersion-react" element={<Home />} />
+        <Route path="/BizVision" element={<Home />} />
         <Route path="/Login" element={<Login/>} />
         <Route path="/DashBoardSA" element={<DashBoardSA/>}/>
         <Route path="/BussinessDetail" element={<BussinessDetail/>}/>

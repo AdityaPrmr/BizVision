@@ -13,7 +13,7 @@ const Header = ()=>{
                      <nav id="admin">
                          <ul>
                              <li><img src={logo} alt="Logo" /></li>
-                             <li><h1>Biz Version</h1></li>
+                             <li><h1>Biz Vision</h1></li>
                          </ul>
                          <div className="right">
                             <ul>

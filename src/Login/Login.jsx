@@ -209,7 +209,7 @@ const Login = () => {
                             <div className="left">
                                 <ul>
                                     <li><img src={logo} alt="Logo" /></li>
-                                    <li><h1>Biz Version</h1></li>
+                                    <li><h1>Biz Vision</h1></li>
                                     <li><Link to="/">HOME</Link></li>
                                 </ul>
                             </div>
