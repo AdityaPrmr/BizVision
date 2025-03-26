@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 const DashBoardSA = ()=>{
     const navigate = useNavigate();
     const handelLogout = ()=>{
+        localStorage.removeItem("user");
         navigate("/");
     };
 
