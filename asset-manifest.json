@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BizVision/static/css/main.ec037107.css",
-    "main.js": "/BizVision/static/js/main.66e92a77.js",
+    "main.js": "/BizVision/static/js/main.8c4f20c6.js",
     "static/media/bootstrap-icons.woff?": "/BizVision/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
     "static/media/Nunito-Italic.ttf": "/BizVision/static/media/Nunito-Italic.cedc8a593d8ba361dcf4.ttf",
     "static/media/Nunito-Regular.ttf": "/BizVision/static/media/Nunito-Regular.9d7a6e03c6e3ed49c7ac.ttf",
@@ -21,10 +21,10 @@
     "index.html": "/BizVision/index.html",
     "static/media/blob.svg": "/BizVision/static/media/blob.8bcc1bd21d14f3366d9ad4e49d89720e.svg",
     "main.ec037107.css.map": "/BizVision/static/css/main.ec037107.css.map",
-    "main.66e92a77.js.map": "/BizVision/static/js/main.66e92a77.js.map"
+    "main.8c4f20c6.js.map": "/BizVision/static/js/main.8c4f20c6.js.map"
   },
   "entrypoints": [
     "static/css/main.ec037107.css",
-    "static/js/main.66e92a77.js"
+    "static/js/main.8c4f20c6.js"
   ]
 }
