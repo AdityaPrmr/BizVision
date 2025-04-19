@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/BizVision/static/css/main.ec037107.css",
-    "main.js": "/BizVision/static/js/main.8c4f20c6.js",
+    "main.css": "/BizVision/static/css/main.c7568403.css",
+    "main.js": "/BizVision/static/js/main.2484bf05.js",
+    "static/media/profile.png": "/BizVision/static/media/profile.e31be46f2a1f46e405e5.png",
     "static/media/bootstrap-icons.woff?": "/BizVision/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
     "static/media/Nunito-Italic.ttf": "/BizVision/static/media/Nunito-Italic.cedc8a593d8ba361dcf4.ttf",
     "static/media/Nunito-Regular.ttf": "/BizVision/static/media/Nunito-Regular.9d7a6e03c6e3ed49c7ac.ttf",
@@ -13,18 +14,13 @@
     "static/media/overlay.webp": "/BizVision/static/media/overlay.129db9feaa50cd1efebd.webp",
     "static/media/Damion.ttf": "/BizVision/static/media/Damion.6c9c6a7619727c26a473.ttf",
     "static/media/logo.png": "/BizVision/static/media/logo.2a127c1242cf3af71fa4.png",
-    "static/media/team.webp": "/BizVision/static/media/team.1979e5f87ec1269e3f9c.webp",
-    "static/media/work1.webp": "/BizVision/static/media/work1.824f410d2ca8803fdacc.webp",
-    "static/media/work3.webp": "/BizVision/static/media/work3.bd041c900b650bb9c7a2.webp",
-    "static/media/work2.webp": "/BizVision/static/media/work2.085d0b33e487b96b1238.webp",
-    "static/media/wave.svg": "/BizVision/static/media/wave.80dc53ba7a2f55b83246.svg",
     "index.html": "/BizVision/index.html",
     "static/media/blob.svg": "/BizVision/static/media/blob.8bcc1bd21d14f3366d9ad4e49d89720e.svg",
-    "main.ec037107.css.map": "/BizVision/static/css/main.ec037107.css.map",
-    "main.8c4f20c6.js.map": "/BizVision/static/js/main.8c4f20c6.js.map"
+    "main.c7568403.css.map": "/BizVision/static/css/main.c7568403.css.map",
+    "main.2484bf05.js.map": "/BizVision/static/js/main.2484bf05.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec037107.css",
-    "static/js/main.8c4f20c6.js"
+    "static/css/main.c7568403.css",
+    "static/js/main.2484bf05.js"
   ]
 }
