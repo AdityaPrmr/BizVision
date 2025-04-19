@@ -10,6 +10,11 @@ html, body {
     min-height: 100%; /* Ensures the home container takes up the full height of the page */
 }
 
+.home .n
+{
+    margin:0;
+    top:-3px;
+}
 .home .n {
     background-color: #2c3e50; /* Dark blue */
     padding: 15px;

@@ -1,0 +1,7 @@
+@media screen and (max-width: 480px) {
+  #root {
+    min-width: 100vw; /* Sets min-width to the viewport width */
+    width: 100%; /* Ensures it takes full width */
+    overflow-x: auto; /* Allows horizontal scrolling if content overflows */
+  }
+}

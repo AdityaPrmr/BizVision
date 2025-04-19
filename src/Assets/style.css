@@ -61,7 +61,6 @@ body{
 }
 
 
-
 img{
     width: 100%; height: 100%;
     -o-object-fit: cover;
@@ -98,17 +97,7 @@ nav{
     height: var(--navHeight);
     z-index: 10;
 }
-nav::before{
-    position: absolute;
-    content: "";
-    pointer-events: none;
-    top: -webkit-calc(-100% + 5px);
-    top: -moz-calc(-100% + 5px);
-    top: calc(-100% + 5px); left: 0;
-    width: 100%; height: 100%;
-    background: url('../Assets/wave.svg') bottom / contain;
-    background-repeat: repeat-x;
-}
+
 nav > div{
     display: -webkit-box;
     display: -webkit-flex;

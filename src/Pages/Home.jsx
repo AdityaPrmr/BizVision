@@ -9,12 +9,8 @@ import '../Assets/style.css';
 import hero1 from '../Assets/hero1.webp';
 import hero2 from '../Assets/hero2.webp';
 import blob from '../Assets/blob.svg';
-import team from '../Assets/team.webp';
-import work1 from '../Assets/work1.webp';
-import work2 from '../Assets/work2.webp';
-import work3 from '../Assets/work3.webp';
+import team from '../Assets/profile.png';
 import overlay from '../Assets/overlay.webp';
-import favicon from '../Assets/favicon.png';
 import { useEffect } from "react";
 const Home = () => {
     const navigate = useNavigate();
@@ -26,8 +22,21 @@ const Home = () => {
 
     const Mid = (
         <>
-        <span className="fade"></span>
         <main>
+        <span className="fade"></span>
+        <nav className="n">
+                <ul>
+                    <li><img src={logo} alt="Logo" /></li>
+                    <li><h1>Biz Vision</h1></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <div className="right">
+                    <ul>
+                        <li><Link to="/login">Login</Link></li>
+                        <li><Link to="/Register">Register</Link></li>
+                    </ul>
+                </div>
+            </nav>
             <section className="hero-banner">
                 <div className="hero-contained">
                     <div className="hero-title fc-white">
@@ -41,7 +50,7 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
-                <div className="hero-socials">
+                {/* <div className="hero-socials">
                     <a href="#" className="mt-a icon-link" aria-label="Follow us on facebook">
                         <i className="bi bi-facebook"></i>
                     </a>
@@ -54,7 +63,7 @@ const Home = () => {
                     <a href="#" className="icon-link mt-10" aria-label="Follow us on youtube">
                         <i className="bi bi-youtube"></i>
                     </a>
-                </div>
+                </div> */}
             </section>
     
             <nav>
@@ -114,37 +123,11 @@ const Home = () => {
                     <div className="col-tri">
                         <article className="card-team">
                             <img src={team} alt="Team Member" />
-                            <h3 className="title ff-damion">John Smith</h3>
+                            <h3 className="title ff-damion">Aditya Parmar</h3>
                             <div className="info">
-                                <h3 className="ff-damion">Business Strategist</h3>
+                                <h3 className="ff-damion">Developer</h3>
                                 <p>
-                                    With over a decade of experience in business strategy, John specializes in helping companies 
-                                    identify growth opportunities and implement effective solutions.
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                    <div className="col-tri">
-                        <article className="card-team">
-                            <img src={team} alt="Team Member" />
-                            <h3 className="title ff-damion">Jane Doe</h3>
-                            <div className="info">
-                                <h3 className="ff-damion">Operations Manager</h3>
-                                <p>
-                                    Jane is an expert in process optimization and operational efficiency. 
-                                    She works closely with clients to streamline workflows and improve productivity.
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                    <div className="col-tri">
-                        <article className="card-team">
-                            <img src={team} alt="Team Member" />
-                            <h3 className="title ff-damion">Michael Lee</h3>
-                            <div className="info">
-                                <h3 className="ff-damion">Technology Consultant</h3>
-                                <p>
-                                    Michael specializes in integrating cutting-edge technology into business operations. 
+                                    Aditya specializes in integrating cutting-edge technology into business operations. 
                                     He helps clients leverage technology to achieve their strategic goals.
                                 </p>
                             </div>
@@ -190,7 +173,7 @@ const Home = () => {
                 </div>
             </section>
     
-            <section className="contained">
+            {/* <section className="contained">
                 <h2 className="section-title ff-damion">Blogs</h2>
                 <p className="ta-center col-wide mlmr-a">
                     Stay updated with the latest trends and insights in business management. 
@@ -243,9 +226,9 @@ const Home = () => {
                         </article>
                     </div>
                 </div>
-            </section>
+            </section> */}
     
-            <section className="subscribe bg-primary-foot" id="subb" style={{ backgroundImage: `url(${overlay})` }}>
+            {/* <section className="subscribe bg-primary-foot" id="subb" style={{ backgroundImage: `url(${overlay})` }}>
                 <div className="contained row ta-center">
                     <div className="col-balance fc-white">
                         <h3 className="mb-a ff-damion mt-a">Subscribe to our newsletter:</h3>
@@ -257,7 +240,7 @@ const Home = () => {
                         </form>
                     </div>
                 </div>
-            </section>
+            </section> */}
     
             <section className="contained ta-center">
                 <h2 className="section-title ff-damion">Reach us</h2>
@@ -284,48 +267,12 @@ const Home = () => {
                     <h3 className="ff-damion">Get in touch</h3>
                     <a href="#" className="display-block fc-white icon-link mt-10 mb-10">
                         <i className="bi bi-envelope-fill"></i>
-                        info@bizvision.com
+                        parmar2100parmar@gmail.com
                     </a>
                     <a href="#" className="display-block fc-white icon-link mt-10 mb-10">
                         <i className="bi bi-telephone-fill"></i>
-                        +1 (123) 456-7890
+                        +91 8109494202
                     </a>
-                    <a href="#" className="display-block fc-white icon-link mt-10 mb-10">
-                        <i className="bi bi-geo-alt-fill"></i>
-                        123 Business St, Suite 456
-                    </a>
-                    <a href="#" className="display-inblock fc-white icon-link mt-20" aria-label="Follow on facebook">
-                        <i className="bi bi-facebook"></i>
-                    </a>
-                    <a href="#" className="display-inblock fc-white icon-link" aria-label="Follow on instagram">
-                        <i className="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" className="display-inblock fc-white icon-link" aria-label="Follow on twitter">
-                        <i className="bi bi-twitter"></i>
-                    </a>
-                    <a href="#" className="display-inblock fc-white icon-link" aria-label="Follow on youtube">
-                        <i className="bi bi-youtube"></i>
-                    </a>
-                </div>
-    
-                <div className="col-quad">
-                    <h3 className="ff-damion">Opening hours</h3>
-                    <p className="mt-10 mb-10 fw-bold">
-                        Monday - Friday:
-                        <span className="fw-normal display-block">9:00 AM - 6:00 PM</span>
-                    </p>
-                    <p className="mt-10 mb-10 fw-bold">
-                        Saturday:
-                        <span className="fw-normal display-block">10:00 AM - 4:00 PM</span>
-                    </p>
-                    <p className="mt-10 mb-10 fw-bold">
-                        Sunday:
-                        <span className="fw-normal display-block">Closed</span>
-                    </p>
-                </div>
-    
-                <div className="col-quad">
-                    <h3 className="ff-damion">Useful Links</h3>
                 </div>
             </div>
         </footer>
@@ -334,21 +281,11 @@ const Home = () => {
 
 
 
-    return (
+    return (<>
+    <style>
+        {`h3 { color: white; }`}
+      </style>
         <div className="home">
-            <nav className="n">
-                <ul>
-                    <li><img src={logo} alt="Logo" /></li>
-                    <li><h1>Biz Vision</h1></li>
-                    <li><a href="#">Home</a></li>
-                </ul>
-                <div className="right">
-                    <ul>
-                        <li><Link to="/login">Login</Link></li>
-                        <li><Link to="/Register">Register</Link></li>
-                    </ul>
-                </div>
-            </nav>
             <div>
                 {Mid}
             </div>
@@ -360,7 +297,7 @@ const Home = () => {
                     <a href="#">Contact Us</a>
                 </div>
             </footer>
-        </div>
+        </div></>
     );
 };
 
